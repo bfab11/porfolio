@@ -70,10 +70,12 @@
 @media screen and (max-width: 480px){
     .about {
         display: flex;
+        position: relative;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
+        overflow: hidden;
     }
 
     .about-left {
@@ -83,13 +85,13 @@
 
     .about-card-bg {
         height: 30vh;
-        top: 20px;
-        left: 30px;
+        top: 50px;
+        left: 50px;
     }
 
     .about-card {
         height: 30vh;
-        top: 5px;
+        top: -170px;
     }
 
     .about-img {
@@ -99,6 +101,15 @@
         overflow: hidden;
     }
 
+    .about-right {
+        position: absolute;
+        top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .about-title {
         display: none;
     }
@@ -106,9 +117,12 @@
     .about-sub {
         font-size: 1em;
         margin: 10px 0;
+        // position: absolute;
+        // top: -10px;
     }
 
     .about-desc {
         font-size: .8em;
     }
+    
 }
