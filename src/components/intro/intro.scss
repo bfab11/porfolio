@@ -23,12 +23,12 @@
 }
 
 .i-intro {
-    font-size: 50px;
+    font-size: 2.1875em;
     font-weight: 400;
 }
 
 .i-name {
-    font-size: 70px;
+    font-size: 3.125em;
 }
 
 .i-title {
@@ -42,7 +42,7 @@
 }
 
 .static-text span {
-    font-size: 60px;
+    font-size: 2.5em;
     font-weight: 400;
 }
 
@@ -56,7 +56,7 @@
 
 .i-title-wrapper li{
     list-style: none;
-    font-size: 60px;
+    font-size: 3.4375em;
     font-weight: 500;
     position: relative;
     top: 0;
@@ -79,7 +79,7 @@
     position: absolute;
     padding: 5px;
     left: 0;
-    height: 100%;
+    height: 105%;
     width: 100%;
     background: $backgroundColor;
     border-left: 2px solid $primaryDark;
@@ -111,7 +111,168 @@
 }
 
 .i-desc-wrapper .i-desc {
-    font-size: 30px;
+    font-size: 1.5625em;
     font-weight: 300;
     line-height: 40px;
+}
+
+@media screen and (max-width: 1305px) and (min-width: 1025px){
+    .i-intro{
+        font-size: 1.5625em;
+        font-weight: 400;
+    }
+
+    .i-name {
+        font-size: 1.875em;
+    }
+
+    .static-text span {
+        font-size: 1.5625em;
+    }
+
+    .i-title-wrapper li {
+        font-size: 2.1875em;
+        font-weight: 400;
+    }
+
+    .i-title-wrapper li span::after {
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 920px){
+    .i-intro {
+        font-size: 1.25em;
+    }
+
+    .i-name {
+        font-size: 1.875em;
+    }
+
+    .static-text span {
+        font-size: 1.25em;
+    }
+
+    .i-title-wrapper li {
+        font-size: 1.875em;
+    }
+
+    .i-title-wrapper li span::after {
+        bottom: 0;
+    }
+
+    .i-desc-wrapper .i-desc {
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (max-width: 919px) and (min-width: 769px){
+    .i-intro{
+        font-size: 1em;
+    }
+
+    .i-name {
+        font-size: 1.5em;
+    }
+
+    .static-text span {
+        font-size: 1em;
+    }
+
+    .i-title-wrapper li {
+        font-size: 1.5em;
+    }
+
+    .i-title-wrapper li span::after {
+        bottom: 0;
+    }
+
+    .i-desc-wrapper .i-desc {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px){
+    .i-intro{
+        font-size: 1em;
+    }
+
+    .i-name {
+        font-size: 1em;
+    }
+
+    .static-text span {
+        font-size: .8em;
+    }
+
+    .i-title-wrapper li {
+        font-size: .78em;
+    }
+
+    .i-title-wrapper li span::after {
+        bottom: 0;
+    }
+
+    .i-desc-wrapper .i-desc {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .intro-left-wrapper {
+        overflow-y: hidden;
+    }
+
+    .i-intro{
+        display: none;
+    }
+
+    .i-name{
+        font-size: .8em;
+    }
+
+    .static-text span {
+        display: none;
+    }
+
+    .i-title {
+        overflow: hidden;
+    }
+
+    .i-title-wrapper li {
+        font-size: .7em;
+    }
+
+    .i-title-wrapper li span::after {
+        bottom: 0;
+        height: 100%;
+    }
+
+    .i-desc-wrapper {
+        overflow: hidden;
+    }
+
+    .i-desc-wrapper .i-desc {
+        font-size: .65em;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .i-bg {
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .i-img {
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
 }

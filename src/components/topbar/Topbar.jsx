@@ -11,11 +11,11 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                     <a href="#intro" className="logo">bfab.</a>
                     <div className="item-container">
                         <PhoneIphoneIcon className="icon" />
-                        <span>650-208-3399</span>
+                        <span className="phone">650-208-3399</span>
                     </div>
                     <div className="item-container">
                         <EmailIcon className="icon" />
-                        <span>brandon.fabie94@gmail.com</span>
+                        <span className="email">brandon.fabie94@gmail.com</span>
                     </div>
                 </div>
                 <div className="right">

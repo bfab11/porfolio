@@ -18,7 +18,7 @@ export default function Intro() {
                         </ul>
                     </div>
                     <div className="i-desc-wrapper">
-                        <p className="i-desc">Full-stack web developer with a background of content creation and performing arts that specializes in creating beatufiul and stunning applications.</p>
+                        <p className="i-desc">Full-stack web developer with a background of content creation and performing arts that specializes in creating beautiful and stunning applications.</p>
                     </div>
                 </div>
             </div>
