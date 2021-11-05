@@ -28,7 +28,8 @@ export default function Works() {
                                     <p>
                                         {d.desc}
                                     </p>
-                                    <span>Projects</span>
+                                    <a href={d.demo} target="_blank">Active Demo</a>
+                                    <a href={d.caseStudy} download>Case Study</a>
                                 </div>
                             </div>
                             <div className="right">
