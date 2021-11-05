@@ -2,6 +2,9 @@
 
 .skills {
     background-color: $backgroundColor;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .title {
@@ -10,11 +13,12 @@
     text-transform: uppercase;
     text-align: center;
     padding: 24px;
-    margin: 60px 0;
+    margin: 30px 0;
 }
 
 .skill {
     display: flex;
+    height: 55%;
     justify-content: space-evenly;
     padding: 16px;
     max-width: 1024px;
@@ -39,6 +43,8 @@
     padding: 30px;
     border-radius: 16px;
     transition: all .5s ease;
+    margin-right: 50px;
+    overflow: hidden;
 }
 
 .set:hover {
@@ -77,4 +83,135 @@
 
 .list:hover {
     color: $primary;
+}
+
+@media screen and (max-width: 480px) {
+
+    .title {
+        display: none;
+    }
+
+    .skill {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        width: 90%;
+    }
+
+    .set {
+        padding: 5px 10px;
+        margin: 5px 0;
+        width: 70%;
+    }
+
+    .set span {
+        width: 1.875em;
+        height: 1.875em;
+        font-size: 1.25em;
+    }
+
+    .set > header {
+        font-size: 1em;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .list {
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .title {
+        // display: none;
+        padding: 0;
+        margin: 20px;
+    }
+
+    .skill {
+        // flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 45%;
+        width: 100%;
+        margin: 0 5px;
+    }
+
+    .set {
+        padding: 5px 5px;
+        margin: 5px 20px;
+        width: 100%;
+    }
+
+    .set span {
+        width: 1.875em;
+        height: 1.875em;
+        font-size: 1.25em;
+    }
+
+    .set > header {
+        font-size: .75em;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .list {
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 919px) and (min-width: 769px) {
+    .skill {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .set {
+        width: 100%;
+        margin: 5px 10px;
+    }
+
+    .set span {
+        font-size: 1.5em;
+        width: 2em;
+        height: 2em;
+    }
+
+    .set > header {
+        font-size: 1.25em;
+    }
+
+    .list {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 920px){
+    .skill {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 60%;
+    }
+
+    .set {
+        width: 100%;
+        margin: 5px 10px;
+    }
+
+    .set span {
+        font-size: 2em;
+        width: 2em;
+        height: 2em;
+    }
+
+    .set > header {
+        font-size: 1.5em;
+    }
+
+    .list {
+        font-size: 1.25em;
+    }
 }

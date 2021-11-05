@@ -84,14 +84,13 @@
     }
 
     .about-card-bg {
-        height: 30vh;
-        top: 70px;
-        left: 50px;
+        display: none;
     }
 
     .about-card {
         height: 30vh;
-        top: -150px;
+        position: absolute;
+        top: 40px;
     }
 
     .about-img {
@@ -117,12 +116,116 @@
     .about-sub {
         font-size: 1em;
         margin: 10px 0;
-        // position: absolute;
-        // top: -10px;
     }
 
     .about-desc {
         font-size: .8em;
     }
     
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px){
+    .about-card-bg {
+        height: 40vh;
+        width: 70%;
+        left: 20px;
+    }
+
+    .about-card {
+        height: 40vh;
+        left: 10px;
+        top: -20px;
+        width: 70%;
+    }
+
+    .about-title {
+        font-size: 2.75em;
+    }
+
+    .about-sub {
+        font-size: 1.25em;
+    }
+
+    .about-desc {
+        font-size: .75em;
+    }
+}
+
+@media screen and (max-width: 919px) and (min-width: 769px) {
+    .about-card-bg {
+        height: 50vh;
+        width: 70%;
+        left: 20px;
+    }
+
+    .about-card {
+        height: 50vh;
+        left: 20px;
+        top: 20px;
+        width: 70%;
+    }
+
+    .about-title {
+        font-size: 3em;
+    }
+
+    .about-sub {
+        font-size: 1.5em;
+    }
+
+    .about-desc {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 920px){
+    .about-card-bg {
+        height: 60vh;
+        width: 70%;
+        left: 20px;
+    }
+
+    .about-card {
+        height: 60vh;
+        top: 50px;
+        width: 70%;
+    }
+
+    .about-title {
+        font-size: 3.15em;
+    }
+
+    .about-sub {
+        font-size: 1.6em;
+    }
+
+    .about-desc {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1305px) and (min-width: 1025px){
+    .about-card-bg {
+        height: 60vh;
+        width: 70%;
+        left: 20px;
+    }
+
+    .about-card {
+        height: 60vh;
+        top: 50px;
+        width: 70%;
+    }
+
+    .about-title {
+        font-size: 3.15em;
+    }
+
+    .about-sub {
+        font-size: 1.6em;
+    }
+
+    .about-desc {
+        font-size: 1em;
+    }
 }

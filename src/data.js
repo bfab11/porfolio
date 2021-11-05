@@ -3,14 +3,14 @@ export const featuredProjects = [
         id: 1,
         title: "Pokemon App",
         img: "assets/pokemon-app.png",
-        desc: "Here is a bunch of dummy text that we will use for now.",
+        desc: "This is a Pokedex application that fetches data using an external api, PokeApi. The application is built with HTML, CSS, JavaScript, jQuery, and Bootstrap. Users can click on a Pokemon to learn more information about them and search for specific Pokemon by name.",
         icon: "./assets/globe.png"
     },
     {
         id: 2,
         title: "Movie-Api",
         img: "assets/movie-api.png",
-        desc: "Here is a bunch of dummy text that we will use for now.",
+        desc: "API Backend for myFlix React and myFlix Angular. This movie API can be used to access a list of movie details, like Movie Title, Movie Genre, Director, and Movie Description. Was built with JavaScript, MongoDB, Express, and deployed with Heroku.",
         icon: "./assets/globe.png"
     },
     {
