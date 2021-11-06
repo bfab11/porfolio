@@ -3,10 +3,11 @@
 .contact {
     position: relative;
     background-color: $backgroundColor;
+    overflow: hidden;
 }
 
 .bg {
-    clip-path: polygon(0% 0%, 0 2%, 25% 52%, 0 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 35% 0%, 50% 50%, 35% 100%, 0% 100%);
     width: 100%;
     height: 100%;
     background-color: $primary;
@@ -14,26 +15,37 @@
 }
 
 .contact-wrapper {
-    padding: 50px;
+    padding: 30px;
     display: flex;
 }
 
-.left {
+.contact-left {
     flex: 1;
     z-index: 3;
+    height: 550px;
+    margin: 0;
+    padding: 0;
 }
 
-.right {
+.contact-right {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    h1 {
+        font-size: 3em;
+    }
 }
 
-.title {
-    font-size: 60px;
+.contact-title {
+    font-size: 3.25em;
     width: 80%;
+    margin: 25px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .info {
@@ -45,19 +57,19 @@
     align-items: center;
     margin: 50px 0px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.25em;
     width: 70%;
     color: $secondary;
 }
 
-.icon {
+#icon {
     width: 30px;
     height: 30px;
     margin-right: 20px;
 }
 
 .desc {
-    font-weight: 200;
+    font-weight: 300;
 }
 
 form {
@@ -66,7 +78,9 @@ form {
     display: flex;
     flex-direction: column;
     position: relative;
+}
 
+.form-buttons {
     p {
         font-weight: 500;
         background-color: $secondary;
@@ -75,6 +89,21 @@ form {
         margin-top: 5px;
         color: $white;
         text-align: center;
+    }
+
+    button {
+    width: 40%;
+    border: none;
+    padding: 15px;
+    background-color: $primary;
+    color: $white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+        &:hover{
+            transform: scale(.9);
+        }
     }
 }
 
@@ -97,19 +126,54 @@ textarea {
     border-bottom: 1px solid black;
 }
 
-button {
-    width: 40%;
-    border: none;
-    padding: 15px;
-    background-color: $primary;
-    color: $white;
-    font-weight: 500;
+
+
+.resume-wrapper {
+    position: relative;
+    margin-left: 20px;
+}
+
+.resume-title {
+    color: $secondary;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0 0 5px 0;
+    display: flex;
+}
+
+.resume-container {
+    display: flex;
+
+}
+
+.resume-item {
+    background-color: $secondary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+    padding: 7px;
+    margin: 5px;
+    border-radius: 5%;
     cursor: pointer;
     transition: all 0.5s ease;
 
-    &:hover{
-        box-shadow: 5px 5px 2px 1px $primaryDark;
-        transform: scale(.9);
+    &:hover {
+        transform: scale(0.95)
+    }
+}
+
+.resume-item a{
+    display: flex;
+    align-items: center;
+    color: $white;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.5s ease;
+
+    &:hover {
+        transform: scale(0.95)
     }
 }
 
@@ -135,15 +199,15 @@ button {
             margin: 0 20px;
             overflow: hidden;
 
-            img {
+            .link-icon {
+                color: $secondary;
                 height: 80%;
                 width: 80%;
                 overflow: hidden;
                 transition: all 0.5s ease;
 
                 &:hover {
-                    transform: scale(1.1);
-                    background-color: $white;
+                    transform: scale(1.25);
                     border-radius: 10px;
                 }
             }
@@ -151,3 +215,465 @@ button {
     }
 }
 
+@media screen and (max-width: 480px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .bg {
+        display: none;
+    }
+
+    .contact-left {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .contact-wrapper {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contact-title {
+        font-size: 1.5em;
+        margin: 0 20px;
+    }
+
+    .info {
+        margin-left: 0;
+    }
+
+    .info-item {
+        margin: 20px 0;
+        font-size: .75em;
+        width: 100%;
+    }
+
+    #icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .resume-wrapper {
+        margin-top: -30px;
+        margin-left: 0;
+    }
+
+    .resume-title {
+        font-size: 1.5em;
+        margin: 0 0 5px 5px;
+    }
+
+    .resume-item {
+        width: 80px;
+        margin: 0 5px;
+        padding: 5px;
+
+        a {
+            font-size: .65em;
+        }
+    }
+
+    .contact-right {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        h1 {
+            display: none;
+        }
+
+        .desc {
+            display: none;
+        }
+    }
+
+    form {
+        margin: 0;
+        width: 100%;
+        
+        .form-buttons {
+            width: 250px;
+            height: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            button {
+                height: 50px;
+                width: 80px;
+                padding: 5px;
+                overflow: hidden;
+                font-size: 0.8em;
+            }
+
+            p {
+                height: 45px;
+                width: 130px;
+                padding: 2px;
+                margin: 0;
+                font-size: 0.8em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        
+    }
+
+    .footer {
+        height: 70px;
+
+        .links {
+            height: 100%;
+            overflow: hidden;
+
+            .link-item {
+                height: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .bg {
+        display: none;
+    }
+
+    .contact-left {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .contact-wrapper {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contact-title {
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        margin: 0 20px;
+    }
+
+    .info {
+        margin-left: 0;
+    }
+
+    .info-item {
+        margin: 20px 0;
+        font-size: .75em;
+        width: 100%;
+    }
+
+    #icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .resume-wrapper {
+        margin-left: 0;
+    }
+
+    .resume-title {
+        font-size: 1.5em;
+        margin: 0 0 10px 5px;
+    }
+
+    .resume-item {
+        width: 80px;
+        margin: 0 5px;
+        padding: 5px;
+
+        a {
+            font-size: .65em;
+        }
+    }
+
+    .contact-right {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        h1 {
+            display: none;
+        }
+
+        .desc {
+            display: none;
+        }
+    }
+
+    form {
+        margin: 0;
+        width: 100%;
+        
+        .form-buttons {
+            width: 250px;
+            height: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            button {
+                height: 50px;
+                width: 80px;
+                padding: 5px;
+                overflow: hidden;
+                font-size: 0.8em;
+            }
+
+            p {
+                height: 45px;
+                width: 130px;
+                padding: 2px;
+                margin: 0;
+                font-size: 0.8em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        
+    }
+
+    .footer {
+        height: 70px;
+
+        .links {
+            height: 100%;
+            overflow: hidden;
+
+            .link-item {
+                height: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 919px) and (min-width: 769px) {
+    .contact-title {
+        font-size: 2.5em;
+        margin: 40px 20px 10px 20px;
+    }
+
+    .contact-wrapper {
+        padding: 0;
+    }
+
+    .info-item {
+        font-size: 1em;
+    }
+
+    .resume-title {
+        font-size: 2em;
+    }
+
+    .resume-item {
+        width: 80px;
+        margin: 0 5px;
+        padding: 5px;
+
+        a {
+            font-size: .7em;
+        }
+    }
+
+    .contact-right {
+
+        h1 {
+            font-size: 2em;
+        }
+
+        .desc {
+            width: 80%;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+    }
+
+    .form-buttons {
+        margin-top: 10px;
+        width: 250px;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        button {
+            height: 50px;
+            width: 80px;
+            padding: 5px;
+            overflow: hidden;
+            font-size: 0.8em;
+        }
+
+        p {
+            height: 45px;
+            width: 130px;
+            padding: 2px;
+            margin: 0;
+            font-size: 0.8em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 920px) {
+    .contact-title {
+        font-size: 2.75em;
+        margin: 40px 20px 10px 20px;
+    }
+
+    .contact-wrapper {
+        padding: 0;
+    }
+
+    .info-item {
+        font-size: 1em;
+    }
+
+    .resume-title {
+        font-size: 2em;
+    }
+
+    .resume-item {
+        width: 80px;
+        margin: 0 5px;
+        padding: 5px;
+
+        a {
+            font-size: .7em;
+        }
+    }
+
+    .contact-right {
+
+        h1 {
+            font-size: 2em;
+        }
+
+        .desc {
+            width: 80%;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+    }
+
+    .form-buttons {
+        margin-top: 10px;
+        width: 250px;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        button {
+            height: 50px;
+            width: 90px;
+            padding: 5px;
+            overflow: hidden;
+            font-size: 0.9em;
+        }
+
+        p {
+            height: 45px;
+            width: 140px;
+            padding: 2px;
+            margin: 0;
+            font-size: 0.9em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 1305px) and (min-width: 1025px) {
+    .contact-title {
+        font-size: 2.75em;
+        margin: 40px 20px 10px 20px;
+    }
+
+    .contact-wrapper {
+        padding: 0;
+    }
+
+    .info-item {
+        font-size: 1.25em;
+    }
+
+    .resume-title {
+        font-size: 2.5em;
+    }
+
+    .resume-item {
+        width: 80px;
+        margin: 0 5px;
+        padding: 5px;
+
+        a {
+            font-size: .7em;
+        }
+    }
+
+    .contact-right {
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        .desc {
+            width: 80%;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+    }
+
+    .form-buttons {
+        margin-top: 10px;
+        width: 250px;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        button {
+            height: 50px;
+            width: 90px;
+            padding: 5px;
+            overflow: hidden;
+            font-size: 0.9em;
+        }
+
+        p {
+            height: 45px;
+            width: 140px;
+            padding: 2px;
+            margin: 0;
+            font-size: 0.9em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

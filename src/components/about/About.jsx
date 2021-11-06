@@ -1,13 +1,15 @@
 import React from 'react'
 import "./about.scss";
 
+import AppleMe from "../../img/appleme.png"
+
 export default function About() {
     return (
         <div className="about" id="about">
             <div className="about-left">
                 <div className="about-card-bg"></div>
                 <div className="about-card">
-                    <img src="assets/appleme.png" alt="" className="about-img" />
+                    <img src={AppleMe} alt="" className="about-img" />
                 </div>
             </div>
             <div className="about-right">

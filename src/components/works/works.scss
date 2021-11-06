@@ -13,12 +13,12 @@
         cursor: pointer;
 
         &.left {
-            left: 100px;
+            left: 5%;
             transform: rotateY(180deg);
         }
 
         &.right {
-            right: 100px;
+            right: 5%;
         }
     }
 
@@ -28,7 +28,7 @@
         position: absolute;
         left: 0;
         overflow: hidden;
-        transition: all 2s ease-out;
+        transition: all .8s ease-out;
 
         .container {
             width: 100vw;
@@ -47,7 +47,7 @@
 
                 .left {
                     flex: 4;
-                    height: 90%;
+                    height: 95%;
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
@@ -83,19 +83,20 @@
 
                         a {
                             font-size: 15px;
-                            background-color: $primary;
-                            color: $secondary;
+                            background-color: $primaryDark;
+                            color: $white;
                             text-decoration: none;
                             font-weight: 500;
                             width: 50%;
                             text-align: center;
+                            margin-top: 2px;
                             padding: 10px 5px;
                             border-radius: 5px;
                             transition: all 0.8s ease;
 
                             &:hover{
-                                background-color: $primaryDark;
-                                color: $white;
+                                background-color: $primary;
+                                color: $secondary;
                                 transform: scale(0.9);
                             }
                         }
@@ -109,12 +110,251 @@
                     justify-content: center;
                     align-items: center;
                     overflow: hidden;
+                    position: relative;
+                    border-left: 10px solid $primaryDark;
 
                     img {
-                        width: 400px;
-                        height: 400px;
-                        transform: rotate(-5deg);
+                        position: absolute;
+                        right: 0;
+                        width: 100%;
+                        height: 100%;
                         overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .works {
+
+        .arrow {
+            height: 30px;
+
+            &.left {
+                top: 50px;
+                left: 45%;
+            }
+
+            &.right {
+                bottom: 50px;
+                left: 45%;
+            }
+        }
+
+        .slider {
+            height: 400px;
+
+            .container{
+
+                .item {
+                    width: 90%;
+
+                    .left {
+                        height: 100%;
+                        flex: 6;
+
+                        .leftContainer {
+                            
+                            .imgContainer {
+                                top: 5px;
+                                width: 20px;
+                                height: 20px;
+                                margin: 5px;
+
+                                img {
+                                    width: 12px;
+                                }
+                            }
+
+                            h2 {
+                                font-size: 1em;
+                            }
+
+                            p {
+                                font-size: .75em;
+                            }
+
+                            a {
+                                font-size: .5em;
+                                padding: 7px 4px;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .works {
+
+        .arrow {
+            height: 40px;
+
+            &.left {
+                top: 50px;
+                left: 45%;
+            }
+
+            &.right {
+                bottom: 50px;
+                left: 45%;
+            }
+        }
+
+        .slider {
+            height: 400px;
+
+            .container{
+
+                .item {
+                    width: 90%;
+
+                    .left {
+                        height: 100%;
+                        flex: 6;
+
+                        .leftContainer {
+                            
+                            .imgContainer {
+                                top: 5px;
+                                width: 20px;
+                                height: 20px;
+                                margin: 5px;
+
+                                img {
+                                    width: 12px;
+                                }
+                            }
+
+                            h2 {
+                                font-size: 1.25em;
+                            }
+
+                            p {
+                                font-size: .9em;
+                            }
+
+                            a {
+                                font-size: .7em;
+                                padding: 8px 4px;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 919px) and (min-width: 769px){
+    .works {
+        .arrow {
+
+            &.left {
+                left: 3%;
+            }
+
+            &.right {
+                right: 3%
+            }
+        }
+
+        .slider {
+
+            .container {
+
+                .item {
+                    width: 75%;
+
+                    .left {
+
+                        .leftContainer {
+
+                            .imgContainer {
+                                width: 30px;
+                                height: 30px;
+                                margin: 5px;
+
+                                img {
+                                    width: 20px;
+                                }
+                            }
+
+                            h2 {
+                                font-size: 1.5em;
+                            }
+
+                            p {
+                                font-size: .95em;
+                            }
+
+                            a {
+                                font-size: .8em;
+                                padding: 9px 5px;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 920px){
+    .works {
+        .arrow {
+
+            &.left {
+                left: 3%;
+            }
+
+            &.right {
+                right: 3%
+            }
+        }
+
+        .slider {
+
+            .container {
+
+                .item {
+                    width: 75%;
+
+                    .left {
+
+                        .leftContainer {
+
+                            .imgContainer {
+                                width: 35px;
+                                height: 35px;
+                                margin: 5px;
+
+                                img {
+                                    width: 25px;
+                                }
+                            }
+
+                            h2 {
+                                font-size: 1.5em;
+                            }
+
+                            p {
+                                font-size: 1em;
+                            }
+
+                            a {
+                                font-size: .9em;
+                                padding: 9px 5px;
+                                margin: 0;
+                            }
+                        }
                     }
                 }
             }

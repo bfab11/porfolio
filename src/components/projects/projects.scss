@@ -5,9 +5,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 
     h1 {
         font-size: 50px;
+        margin: 40px 0;
+        height: 200px;
     }
 
     ul {
@@ -15,6 +18,8 @@
         padding: 0;
         list-style: none;
         display: flex;
+        position: absolute;
+        top: 120px;
     }
 
     .container {
@@ -24,39 +29,127 @@
         justify-content: center;
         flex-wrap: wrap;
 
-        .item{
-            width: 300px;
-            height: 200px;
-            border-radius: 20px;
-            border: 1px solid $primary;
-            margin: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: $white;
-            position: relative;
-            transition: all 0.5s ease;
-            cursor: pointer;
+        a{
 
-            h3 {
-                position: absolute;
-                font-size: 20px;
-            }
+            .item{
+                width: 300px;
+                height: 200px;
+                border-radius: 20px;
+                border: 1px solid $primary;
+                margin: 10px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $white;
+                position: relative;
+                transition: all 0.5s ease;
+                cursor: pointer;
+                
+                h3 {
+                    position: absolute;
+                    font-size: 20px;
+                }
 
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                z-index: 1;
-            }
-
-            &:hover {
-                background-color: $primaryDark;
                 img {
-                    opacity: 0.2;
-                    z-index: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    z-index: 1;
+                }
+
+                &:hover {
+                    background-color: $primaryDark;
+                    img {
+                        opacity: 0.2;
+                        z-index: 0;
+                    }
                 }
             }
+        }
+    }
+
+    @media screen and (max-width: 480px){
+        h1 {
+            display: none;
+        }
+
+        ul {
+            height: 100px;
+            font-size: .5em;
+            margin: 0;
+            top: 50px;
+        }
+        .container {
+            margin-top: 100px;
+            width: 80%;
+            a {
+                .item {
+                    width: 200px;
+                    height: 200px;
+
+                    h3 {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    @media screen and (max-width: 768px) and (min-width:481px) {
+        h1 {
+            font-size: 2em;
+            height: 100px;
+        }
+
+        ul {
+            height: 100px;
+            font-size: .5em;
+            top: 80px;
+        }
+
+        .container {
+            width: 80%;
+            a {
+                .item {
+                    width: 300px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 919px) and (min-width: 769px){
+        h1 {
+            font-size: 2.5em;
+            height: 200px;
+        }
+
+        ul {
+            top: 100px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) and (min-width: 920px){
+        h1 {
+            font-size: 2.75em;
+            height: 200px;
+        }
+
+        ul {
+            top: 100px;
+        }
+    }
+
+    @media screen and (max-width: 1305px) and (min-width: 1025px){
+        h1 {
+            height: 200px;
+            font-size: 3em;
+        }
+
+        ul {
+            top: 100px;
         }
     }
 }

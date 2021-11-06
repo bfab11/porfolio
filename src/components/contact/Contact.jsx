@@ -1,9 +1,15 @@
 import React from 'react';
 import "./contact.scss";
+import TwitterIcon from '@mui/icons-material/Twitter';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
 import HomeIcon from '@mui/icons-material/Home';
+import SearchIcon from '@mui/icons-material/Search';
+import DownloadIcon from '@mui/icons-material/Download';
 import emailjs from 'emailjs-com';
+import Resume from "../../assets/Fabie-Brandon-Resume.pdf";
 
 import { useRef, useState } from 'react';
 
@@ -27,24 +33,41 @@ export default function Contact() {
         <div className="contact" id="contact">
             <div className="bg"></div>
             <div className="contact-wrapper">
-                <div className="left">
-                    <h1 className="title">Let's talk!</h1>
+                <div className="contact-left">
+                    <h1 className="contact-title">Let's talk!</h1>
                     <div className="info">
                         <div className="info-item">
-                            <PhoneIphoneIcon className="icon" />
+                            <PhoneIphoneIcon id="icon" />
                             <span>650-208-3399</span>
                         </div>
                         <div className="info-item">
-                            <EmailIcon className="icon" />
+                            <EmailIcon id="icon" />
                             <span>brandon.fabie94@gmail.com</span>
                         </div>
                         <div className="info-item">
-                            <HomeIcon className="icon" />
-                            <span>520 Falcon Way, Hercules, California</span>
+                            <HomeIcon id="icon" />
+                            <span>Hercules, California <br />[Open to remote]</span>
+                        </div>
+                    </div>
+                    <div className="resume-wrapper">
+                        <h1 className="resume-title">Resume</h1>
+                        <div className="resume-container">
+                            <div className="resume-item">
+                                <a href={Resume} target="_blank">
+                                    <SearchIcon className="icon" />
+                                    View
+                                </a>
+                            </div>
+                            <div className="resume-item">
+                                <a href={Resume} download>
+                                    <DownloadIcon className="icon" />
+                                    Download
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="right">
+                <div className="contact-right">
                     <h1>Get in touch with me!</h1>
                     <p className="desc">Would love to hear about your great ideas. Excited to work with you!</p>
                     <form ref={formRef} onSubmit={handleSubmit}>
@@ -52,8 +75,10 @@ export default function Contact() {
                         <input type="text" placeholder="Subject" name="user_subject" />
                         <input type="text" placeholder="Email" name="user_email" />
                         <textarea rows="5" placeholder="Message" name="message" ></textarea>
-                        <button>Submit</button>
-                        {done && <p>Thanks for your message!</p>}
+                        <div className="form-buttons">
+                            <button>Submit</button>
+                            {done && <p>Thanks for your message!</p>}
+                        </div>
                     </form>
                 </div>
             </div>
@@ -61,17 +86,17 @@ export default function Contact() {
                 <div className="links">
                     <div className="link-item">
                         <a href="https://twitter.com/_bfabi" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/twitter.png" alt="" className="link-icon" />
+                            <TwitterIcon className="link-icon" />
                         </a>
                     </div>
                     <div className="link-item">
                         <a href="https://github.com/bfab11" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/github_PNG87.png" alt="" className="link-icon" />
+                            <GitHubIcon className="link-icon" />
                         </a>
                     </div>
                     <div className="link-item">
                         <a href="https://www.linkedin.com/in/brandon-fabie-7a8101209/" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/linkedin.png" alt="" className="link-icon" />
+                            <LinkedInIcon className="link-icon" />
                         </a>
                     </div>
                 </div>

@@ -3,6 +3,8 @@ import "./works.scss";
 import { featuredProjects } from '../../data';
 import { useState } from 'react';
 
+import Arrow from "../../img/arrow.png";
+
 export default function Works() {
 
     const [ currentSlide, setCurrentSlide ] = useState(0);
@@ -29,7 +31,7 @@ export default function Works() {
                                         {d.desc}
                                     </p>
                                     <a href={d.demo} target="_blank">Active Demo</a>
-                                    <a href={d.caseStudy} download>Case Study</a>
+                                    <a href={d.caseStudy} target="_blank">Case Study</a>
                                 </div>
                             </div>
                             <div className="right">
@@ -39,8 +41,8 @@ export default function Works() {
                     </div>
                 ))}
             </div>
-            <img src="assets/arrow.png" className="arrow left" alt="" onClick={() => handleClick("left")} />
-            <img src="assets/arrow.png" className="arrow right" alt="" onClick={() => handleClick("right")} />
+            <img src={Arrow} className="arrow left" alt="" onClick={() => handleClick("left")} />
+            <img src={Arrow} className="arrow right" alt="" onClick={() => handleClick("right")} />
         </div>
     )
 }

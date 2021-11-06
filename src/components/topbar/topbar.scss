@@ -7,7 +7,7 @@
     color: $secondary;
     position: fixed;
     top: 0;
-    z-index: 3;
+    z-index: 10000;
     transition: all .5s ease;
 
     .wrapper {
@@ -46,9 +46,9 @@
         }
 
         .right {
+            position: relative;
 
             .hamburger{
-                margin-left: 90%;
                 width: 32px;
                 height: 25px;
                 display: flex;
