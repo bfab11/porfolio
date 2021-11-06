@@ -1,20 +1,31 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cf945792.chunk.css",
-    "main.js": "/portfolio/static/js/main.fd3dceeb.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.fd3dceeb.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.357ce8b0.chunk.css",
+    "main.js": "/portfolio/static/js/main.f9691a7e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f9691a7e.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.87295122.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.87295122.js.map",
-    "static/js/2.67054477.chunk.js": "/portfolio/static/js/2.67054477.chunk.js",
-    "static/js/2.67054477.chunk.js.map": "/portfolio/static/js/2.67054477.chunk.js.map",
+    "static/js/2.61125f65.chunk.js": "/portfolio/static/js/2.61125f65.chunk.js",
+    "static/js/2.61125f65.chunk.js.map": "/portfolio/static/js/2.61125f65.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.cf945792.chunk.css.map": "/portfolio/static/css/main.cf945792.chunk.css.map",
-    "static/js/2.67054477.chunk.js.LICENSE.txt": "/portfolio/static/js/2.67054477.chunk.js.LICENSE.txt"
+    "static/css/main.357ce8b0.chunk.css.map": "/portfolio/static/css/main.357ce8b0.chunk.css.map",
+    "static/js/2.61125f65.chunk.js.LICENSE.txt": "/portfolio/static/js/2.61125f65.chunk.js.LICENSE.txt",
+    "static/media/Fabie-Brandon-Resume.74aebc4a.pdf": "/portfolio/static/media/Fabie-Brandon-Resume.74aebc4a.pdf",
+    "static/media/appleme.bd110364.png": "/portfolio/static/media/appleme.bd110364.png",
+    "static/media/chat-app-case-study.8e6e2d89.pdf": "/portfolio/static/media/chat-app-case-study.8e6e2d89.pdf",
+    "static/media/chat.31777420.png": "/portfolio/static/media/chat.31777420.png",
+    "static/media/globe.c824dd0f.png": "/portfolio/static/media/globe.c824dd0f.png",
+    "static/media/me.e0586df2.png": "/portfolio/static/media/me.e0586df2.png",
+    "static/media/meet-app.75259fce.png": "/portfolio/static/media/meet-app.75259fce.png",
+    "static/media/movie-api.cd77f3cb.png": "/portfolio/static/media/movie-api.cd77f3cb.png",
+    "static/media/myFlix-Angular.5278d2ac.png": "/portfolio/static/media/myFlix-Angular.5278d2ac.png",
+    "static/media/myFlix-app.b42e480f.png": "/portfolio/static/media/myFlix-app.b42e480f.png",
+    "static/media/pokemon-app.a5c701b3.png": "/portfolio/static/media/pokemon-app.a5c701b3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.87295122.js",
-    "static/js/2.67054477.chunk.js",
-    "static/css/main.cf945792.chunk.css",
-    "static/js/main.fd3dceeb.chunk.js"
+    "static/js/2.61125f65.chunk.js",
+    "static/css/main.357ce8b0.chunk.css",
+    "static/js/main.f9691a7e.chunk.js"
   ]
 }
