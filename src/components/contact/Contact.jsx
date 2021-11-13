@@ -82,7 +82,7 @@ export default function Contact() {
             <div className="footer">
                 <div className="links">
                     <div className="link-item">
-                        <a href="https://twitter.com/_bfabi" target="_blank" rel="noopener noreferrer">
+                        <a href="https://twitter.com/brandon_fabie" target="_blank" rel="noopener noreferrer">
                             twitter
                             {/* <TwitterIcon className="link-icon" /> */}
                         </a>

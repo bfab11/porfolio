@@ -24,7 +24,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                 <div className="right">
                     <div className="links">
                         <div className="link-item">
-                            <a href="https://twitter.com/_bfabi" target="_blank" rel="noopener noreferrer">
+                            <a href="https://twitter.com/brandon_fabie" target="_blank" rel="noopener noreferrer">
                                 <TwitterIcon className="link-icon" />
                             </a>
                         </div>
