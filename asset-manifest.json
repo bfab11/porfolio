@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.357ce8b0.chunk.css",
-    "main.js": "/portfolio/static/js/main.f9691a7e.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f9691a7e.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.dc25eeae.chunk.css",
+    "main.js": "/portfolio/static/js/main.f9f5c230.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f9f5c230.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.87295122.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.87295122.js.map",
     "static/js/2.61125f65.chunk.js": "/portfolio/static/js/2.61125f65.chunk.js",
     "static/js/2.61125f65.chunk.js.map": "/portfolio/static/js/2.61125f65.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.357ce8b0.chunk.css.map": "/portfolio/static/css/main.357ce8b0.chunk.css.map",
+    "static/css/main.dc25eeae.chunk.css.map": "/portfolio/static/css/main.dc25eeae.chunk.css.map",
     "static/js/2.61125f65.chunk.js.LICENSE.txt": "/portfolio/static/js/2.61125f65.chunk.js.LICENSE.txt",
     "static/media/Fabie-Brandon-Resume.74aebc4a.pdf": "/portfolio/static/media/Fabie-Brandon-Resume.74aebc4a.pdf",
     "static/media/appleme.bd110364.png": "/portfolio/static/media/appleme.bd110364.png",
@@ -16,16 +16,23 @@
     "static/media/chat.31777420.png": "/portfolio/static/media/chat.31777420.png",
     "static/media/globe.c824dd0f.png": "/portfolio/static/media/globe.c824dd0f.png",
     "static/media/me.e0586df2.png": "/portfolio/static/media/me.e0586df2.png",
+    "static/media/meagain.d2193b1e.jpg": "/portfolio/static/media/meagain.d2193b1e.jpg",
     "static/media/meet-app.75259fce.png": "/portfolio/static/media/meet-app.75259fce.png",
+    "static/media/meetup.f70a4b23.jpg": "/portfolio/static/media/meetup.f70a4b23.jpg",
     "static/media/movie-api.cd77f3cb.png": "/portfolio/static/media/movie-api.cd77f3cb.png",
+    "static/media/moviepic.4791eb57.jpg": "/portfolio/static/media/moviepic.4791eb57.jpg",
+    "static/media/moviepic2.8991af8c.jpg": "/portfolio/static/media/moviepic2.8991af8c.jpg",
+    "static/media/moviepic3.df407fd9.jpg": "/portfolio/static/media/moviepic3.df407fd9.jpg",
     "static/media/myFlix-Angular.5278d2ac.png": "/portfolio/static/media/myFlix-Angular.5278d2ac.png",
     "static/media/myFlix-app.b42e480f.png": "/portfolio/static/media/myFlix-app.b42e480f.png",
-    "static/media/pokemon-app.a5c701b3.png": "/portfolio/static/media/pokemon-app.a5c701b3.png"
+    "static/media/pokeball.55e74a7f.jpg": "/portfolio/static/media/pokeball.55e74a7f.jpg",
+    "static/media/pokemon-app.a5c701b3.png": "/portfolio/static/media/pokemon-app.a5c701b3.png",
+    "static/media/texting.0aa307a1.jpg": "/portfolio/static/media/texting.0aa307a1.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.87295122.js",
     "static/js/2.61125f65.chunk.js",
-    "static/css/main.357ce8b0.chunk.css",
-    "static/js/main.f9691a7e.chunk.js"
+    "static/css/main.dc25eeae.chunk.css",
+    "static/js/main.f9f5c230.chunk.js"
   ]
 }
