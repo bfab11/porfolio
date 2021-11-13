@@ -1,8 +1,5 @@
 import React from 'react';
 import "./contact.scss";
-import TwitterIcon from '@mui/icons-material/Twitter';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
 import HomeIcon from '@mui/icons-material/Home';
@@ -86,17 +83,20 @@ export default function Contact() {
                 <div className="links">
                     <div className="link-item">
                         <a href="https://twitter.com/_bfabi" target="_blank" rel="noopener noreferrer">
-                            <TwitterIcon className="link-icon" />
+                            twitter
+                            {/* <TwitterIcon className="link-icon" /> */}
                         </a>
                     </div>
                     <div className="link-item">
                         <a href="https://github.com/bfab11" target="_blank" rel="noopener noreferrer">
-                            <GitHubIcon className="link-icon" />
+                            github
+                            {/* <GitHubIcon className="link-icon" /> */}
                         </a>
                     </div>
                     <div className="link-item">
                         <a href="https://www.linkedin.com/in/brandon-fabie-7a8101209/" target="_blank" rel="noopener noreferrer">
-                            <LinkedInIcon className="link-icon" />
+                            linkedin
+                            {/* <LinkedInIcon className="link-icon" /> */}
                         </a>
                     </div>
                 </div>
